@@ -3,17 +3,107 @@
 <html>
 
 <head>
-	<title> Chillsoft Games </title>
+	<title>Chillsoft Games</title>
 
 	<link rel="favicon">
 
 	<style type = "text/css">
 
-	body {
-		background-color: rgb(155, 249, 255);
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+	#header {
+		margin-top: 60px;
 	}
 
+	#logo {
+		position: absolute;
+		left: -9999px;
+		right: -9999px;
+		display: block;
+		margin: auto;
+		margin-top: 50px;
+		text-align: center;
+		width: 100%;
+		min-width: 600px;
+		max-width: 600px;
+	}
+
+	#logo-mobile {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		max-width: 603px;
+	}
+
+	#latest {
+		text-align: center;
+		padding-top: 360px;
+	}
+
+	#navigation {
+		margin : auto;
+    	display: block;
+    	margin-top: 60px;
+	}
+
+	body {
+		background-image: linear-gradient(rgb(255, 251, 155), rgb(255, 200, 155));
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+
+	img.latest {
+		width: 80%;
+		max-width: 800px;
+	}
+
+	img.archive {
+		float: left;
+		margin-left: 60px;
+		width: 30%;
+	}
+
+	img.contact {
+		float: right;
+		margin-right: 60px;
+		width: 30%;
+	}
+
+	</style>
+
 </head>
+
+<div id="content-desktop">
+	<div id ="header">
+		<a href="https://chilsoft.com">
+			<img id="logo" src="img/logo.png">
+		</a>
+	</div>
+
+	<div id="latest">
+		<a href="https://aquma4livez.com/Smashy-Bashy">
+			<img class="latest" src="img/smashybashy.png" alt="smashy bashy">
+		</a>
+	</div>
+
+	<div id="navigation">
+
+		<div>
+			<a href="archive">
+				<img class='archive' src="img/archive.png" alt="archive">
+			</a>
+		</div>
+
+		<div>
+			<a href="contact">
+				<img class='contact' src="img/contact.png" alt="contact">
+			</a>
+		</div>
+
+	</div>
+
+</div>
 
 
 </html>
