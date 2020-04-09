@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 	<title>Chillsoft Games</title>
@@ -47,6 +47,12 @@
     	margin-top: 60px;
 	}
 
+	#icon {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
 	body {
 		background-image: linear-gradient(rgb(255, 251, 155), rgb(255, 200, 155));
 		background-repeat: no-repeat;
@@ -68,6 +74,33 @@
 		float: right;
 		margin-right: 60px;
 		width: 30%;
+	}
+
+	.social-container {
+		position: relative;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+
+	.twitter {
+		width: 100px;
+
+		-webkit-transition: 5s ease-in-out;
+	    -moz-transition: 5s ease-in-out;
+	    -o-transition: 5s ease-in-out;
+	    transition: 5s ease-in-out;
+
+	    overflow: hidden;
+	}
+
+	.twitter:hover{
+		-webkit-transform: translate(50em,-100em);
+	    -moz-transform: translate(50em,-100em);
+	    -o-transform: translate(50em,-100em);
+	    -ms-transform: translate(50em,-100em);
+	    transform: translate(50em,-100em);
 	}
 
 	</style>
@@ -101,6 +134,12 @@
 			</a>
 		</div>
 
+	</div>
+
+	<div id="icon">
+		<a href="https://twitter.com/chillsoftgames">
+			<img class='twitter' src="img/twitter.png" alt="twitter">
+		</a>
 	</div>
 
 </div>
