@@ -7,25 +7,32 @@
 
 	<link rel="favicon">
 
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
 	<style type = "text/css">
 
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+	#content-desktop {display: block;}
+    #content-mobile {display: none;}
+
+    @media screen and (max-width: 935px) {
+
+    #content-desktop {display: none;}
+    #content-mobile {display: block;}
+
+    }
+
 
 	#header {
 		margin-top: 60px;
 	}
 
 	#logo {
-		position: absolute;
-		left: -9999px;
-		right: -9999px;
 		display: block;
-		margin: auto;
-		margin-top: 50px;
-		text-align: center;
-		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
 		min-width: 600px;
-		max-width: 600px;
 	}
 
 	#logo-mobile {
@@ -33,73 +40,76 @@
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
-		max-width: 603px;
+		max-width: 600px;
 	}
 
-	#latest {
+	#emailupdates {
+		font-family: 'Fredoka One';
+		font-size: 3em;
 		text-align: center;
-		padding-top: 360px;
+		color: #72f1e3;
 	}
 
-	#navigation {
-		margin : auto;
-    	display: block;
-    	margin-top: 60px;
+	#mailchimp {
+		padding-top: 20px;
+		padding-bottom: 50px;
+	}
+		
+	#mc_embed_signup {
+		background:#fff; 
+		clear:left; 
+		font-family: Helvetica,sans-serif; 
+		width:100%;
 	}
 
-	#icon {
+	#upcomingtitle {
+		font-family: 'Fredoka One'; 
+		font-size: 3em;
+		text-align: center;
+		color: #72f1e3;
+	}
+
+	#upcoming {
+		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		padding-top: 10px;
+		width: 70%;
+	}
+
+	#upcoming-mobile {
 		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 10px;
+		width: 70%;
+		min-width: 400px;
+	}
+
+	#smashybashytitle {
+		width: 49%;
+		float: left;
+	}	
+
+	#smashybashygame {
+		width: 49%;
+		float: right;
+	}
+
+	.button {
+		background-color: #72f1e3;
+		border-radius: 12px;
+		border: none;
+		padding: 5px 10px;
+		transition-duration: 0.4s;
+	}
+
+	.button:hover {
+		background-color: #00a3ff;
+		color: #72f1e3;
 	}
 
 	body {
-	}
-
-	img.latest {
-		width: 80%;
-		max-width: 800px;
-	}
-
-	img.archive {
-		float: left;
-		margin-left: 60px;
-		width: 30%;
-		max-width: 300px;
-	}
-
-	img.contact {
-		float: right;
-		margin-right: 60px;
-		width: 30%;
-		max-width: 300px;
-	}
-
-	.social-container {
-		position: relative;
-		display: flex;
-		align-content: center;
-		justify-content: center;
-		overflow: hidden;
-	}
-
-	.twitter {
-		width: 100px;
-
-		-webkit-transition: 5s ease-in-out;
-	    -moz-transition: 5s ease-in-out;
-	    -o-transition: 5s ease-in-out;
-	    transition: 5s ease-in-out;
-
-	    overflow: hidden;
-	}
-
-	.twitter:hover{
-		-webkit-transform: translate(50em,-100em);
-	    -moz-transform: translate(50em,-100em);
-	    -o-transform: translate(50em,-100em);
-	    -ms-transform: translate(50em,-100em);
-	    transform: translate(50em,-100em);
 	}
 
 	</style>
@@ -107,13 +117,89 @@
 </head>
 
 <div id="content-desktop">
+
 	<div id ="header">
 		<a href="https://chillsoft.com">
 			<img id="logo" src="img/logo.png">
 		</a>
 	</div>
 
+	<div id ="emailupdates">
+		<span>Email Updates</span>
 
+		<div id="mailchimp">
+			<!-- Begin Mailchimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://chillsoft.us10.list-manage.com/subscribe/post?u=b59217d06f873663c8b3503a6&amp;id=37998a450a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+				
+					<input style="font-size: .5em; color: #00a3ff; background: #ececec; border: none; border-radius: 8px; padding: 5px; padding-left: 10px; margin-bottom: 20px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b59217d06f873663c8b3503a6_37998a450a" tabindex="-1" value=""></div>
+
+				    <div class="clear"><input style="font-size: .75em; font-family: 'Fredoka One'; color: #00a3ff;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+			    </div>
+			</form>
+			</div>
+			<!--End mc_embed_signup-->
+		</div>
+
+	</div>
+
+	<div id="upcomingtitle">
+		<span>Upcoming Games</span>
+	</div>
+
+	<div id="upcoming">
+		<img id="smashybashytitle" src="img/smashy bashy title.png">
+		<img id="smashybashygame" src="img/smashy bashy.png">
+	</div>
+
+</div>
+
+
+<!--MOBILE-->
+
+<div id="content-mobile">
+
+	<div id ="header">
+		<a href="https://chillsoft.com">
+			<img id="logo-mobile" src="img/logo.png">
+		</a>
+	</div>
+
+	<div id ="emailupdates">
+		<span>Email Updates</span>
+
+		<div id="mailchimp">
+			<!-- Begin Mailchimp Signup Form -->
+			<div id="mc_embed_signup">
+			<form action="https://chillsoft.us10.list-manage.com/subscribe/post?u=b59217d06f873663c8b3503a6&amp;id=37998a450a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			    <div id="mc_embed_signup_scroll">
+				
+					<input style="font-size: .5em; color: #00a3ff; background: #ececec; border: none; border-radius: 8px; padding: 5px; padding-left: 10px; margin-bottom: 20px;" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b59217d06f873663c8b3503a6_37998a450a" tabindex="-1" value=""></div>
+
+				    <div class="clear"><input style="font-size: .75em; font-family: 'Fredoka One'; color: #00a3ff;" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+			    </div>
+			</form>
+			</div>
+			<!--End mc_embed_signup-->
+		</div>
+
+	</div>
+
+	<div id="upcomingtitle">
+		<span>Upcoming Games</span>
+	</div>
+
+	<div id="upcoming-mobile">
+		<img id="smashybashytitle" src="img/smashy bashy title.png">
+		<img id="smashybashygame" src="img/smashy bashy.png">
+	</div>
 </div>
 
 
